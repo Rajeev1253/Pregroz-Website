@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>peproz</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="para1">
+      <div class="logo"><h3>PraRoz</h3></div>
+      <div class="navbar">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="Design.html">DESIGN</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="searchbox">
+        <input type="search" name="" id="" placeholder="Type of search" />
+        <button class="">Search</button>
+      </div>
+      <div class="ham">
+        <li onclick="showSidebar()"><a href="#">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="40"
+          viewBox="0 -960 960 960"
+          width="40"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+        
+        
+        </a></li>
+
+       
+      </div>
+    </div>
+    <div class="ram">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="Design.html">DESIGN</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    
+       
+      </ul>
+    </div>
+
+    <div class="para2">
+      <div class="left-side">
+        <h1>Web Design & <span> Development </span>Course</h1>
+        <p>
+          Web Design is a specialisation of the design stream. They also use
+          HTML, CSS,WYSIWYG editing software, mark up validators etc.,<br />
+          to create design elements.
+        </p>
+        <button>Join us</button>
+      </div>
+      <div class="right-side">
+        <button class="Login-here"><b>Login Here</b></button>
+        <input type="email" placeholder="Enter email here" />
+        <input type="password" placeholder="Enter password here" />
+        <button class="login">Login</button>
+        <p>Dont have account ?</p>
+        <p>Signup here</p>
+        <h6>Login with</h6>
+        <div class="icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector(".ram");
+        sidebar.style.display='flex'
+      }
+      function hideSidebar(){
+        const sidebar= document.querySelector(".ram");
+        sidebar.style.display='none'
+      }
+    </script>
+  </body>
+</html>
