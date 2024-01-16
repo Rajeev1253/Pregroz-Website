@@ -1,0 +1,37 @@
+*{
+ margin: 0;
+ padding: 0;  
+
+}
+.heading{
+    color:aliceblue;
+    text-align: center;
+}
+.main{
+
+}
+.left{
+    display: flex;
+    background-color:#212122;;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    gap: 15px;
+
+}
+.heading{
+ text-align
+ : center;
+}
+.left-img{
+ display: flex;
+ align-items: center;
+    
+   
+}
+.left>p{
+    color: aliceblue;
+    padding-left: 10px;
+    margin-left: 10vw;
+}
