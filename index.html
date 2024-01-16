@@ -19,21 +19,25 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-      <div class="searchbox">
-        <input type="search" name="" id="" placeholder="Type of search" />
-        <button class="">Search</button>
+      <div class="nav-right">
+        <div class="searchbox">
+          <input type="search" name="" id="" placeholder="Type of search" />
+          <button class="">Search</button>
+        </div>
+        <div class="hamicon">
+          <li onclick="showSidebar()">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </div>
+
       </div>
-      <div class="hamicon">
-        <li onclick="showSidebar()">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              />
-            </svg>
-          </a>
-        </li>
-      </div>
+     
     </div>
     <div class="mobile-nav">
       <ul class="sidebar">
@@ -85,25 +89,6 @@
         </div>
       </div>
     </div>
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector(".mobile-nav");
-        sidebar.style.display = "flex";
-      }
-      function hideSidebar() {
-        const sidebar = document.querySelector(".mobile-nav");
-        sidebar.style.display = "none";
-      }
-      const submit= document.getElementById('login');
-      submit.addEventListener("click",()=>{
-        const email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
-
-        const em = localStorage.setItem("email",email);
-        let pass = localStorage.setItem("password",password);
-
-      })
-
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
