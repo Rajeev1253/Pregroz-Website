@@ -10,11 +10,10 @@ body{
 
 .section1{
     display: flex;
-    justify-content: space-between;
 }
 .logo{
     color:hsla(27, 100%, 50%, 0.855);
-    width: 200px;
+    width: 20%;
     height: 70px;
     font-size:35px;
     text-align: center;
@@ -23,6 +22,7 @@ body{
     padding-top: 10px;
 }
 .navbar{
+    width:40%;
     padding-top: 29px;
     flex: 1;
     align-items: center;
@@ -50,14 +50,14 @@ list-style: none;
 .searchbox{
     display: flex;
     align-items: center;
-    width: 200px;    
+    width: 30%;    
     padding-bottom: 16px;
 }
 .searchbox>input{
     background:inherit ;
     border:1px solid hsla(27, 100%, 50%, 0.855);
     color:white;
-    width:270px;
+    width:200px;
     height: 41px;
     margin-top:17px ;
     
@@ -74,7 +74,7 @@ list-style: none;
     padding-left:0 ;
 }
 .ham{
-    background-color:inherit;
+    background-color:transparent;
 }
 .fillcolor{
     color:white
@@ -127,8 +127,9 @@ list-style: none;
 
   }
 
-.para2{
+.section2{
     display: flex;
+    flex-wrap: wrap;
 
 
 }
@@ -138,7 +139,7 @@ list-style: none;
     margin-right:50px;
     margin-left: 50px;
     height: auto;
-    width:560px;
+    width:40%;
 }
 .left-side>h1{
     display: inline-block;
@@ -177,8 +178,8 @@ span{
  
 .right-side{
     position: relative;
-    margin-top: 50px;
-    margin-left:168px;
+    top: 50px;
+    left:168px;
     height:450px;
     width:300px;
     text-align: center;
