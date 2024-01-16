@@ -28,9 +28,11 @@ h2{
     font-size: xx-large;
     padding-top:30px ;
 }
-@media(max-width:1600px){
-    .main{
-    
-    }
- 
+.btn{
+    text-align: center;
+}
+button{
+    background-color: hsla(27, 100%, 50%, 0.855);
+    width: 150px;
+    height: 40px;
 }

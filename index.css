@@ -179,7 +179,8 @@ span{
     color:white;
     font-weight: 100;
  }
- 
+
+
 .right-side{
     top: 50px;
     left: 160px;
@@ -202,6 +203,7 @@ span{
     cursor: pointer;
 }
 .right-side>input{
+    color: aliceblue;
     width: 240px;
     height: 35px;
     background:transparent;
